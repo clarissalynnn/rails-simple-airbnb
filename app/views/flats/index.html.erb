@@ -12,6 +12,8 @@
             </div>
             <div class="card-footer">
               <a href="<%= flat_path(flat)%>" class="card-link">More info</a>
+              <a href="<%= edit_flat_path(flat)%>" class="card-link ms-3 text-warning">Edit</a>
+              <%= link_to "Remove", flat_path(flat), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "ms-3 text-danger" %>
             </div>
           </div>
       </div>
